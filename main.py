@@ -11,7 +11,7 @@ class CircleWidget(QWidget):
 
     def paintEvent(self, event):
         qp = QPainter(self)
-        qp.setBrush(Qt.yellow)
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(QRect(10, 10, self.diameter, self.diameter))
 
 
